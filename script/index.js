@@ -4,8 +4,12 @@ const courses = [
     { name: "CSE 210", category: "cse", completed: true },
     { name: "WDD 130", category: "wdd", completed: true },
     { name: "WDD 131", category: "wdd", completed: true },
-    { name: "WDD 231", category: "wdd", completed: false } // ← not completed
+    { name: "WDD 231", category: "wdd", completed: false } // Not completed yet
 ];
+
+const courseList = document.getElementById("course-list");
+const courseCount = document.getElementById("course-count");
+const buttons = document.querySelectorAll("nav button");
 
 function displayCourses(filter) {
     courseList.innerHTML = "";
