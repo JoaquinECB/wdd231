@@ -48,7 +48,7 @@ li {
     font-size: 1.1rem;
 }
 
-li::before {
+li.completed::before {
     content: "✓ ";
     color: #d4a017;
     font-weight: bold;

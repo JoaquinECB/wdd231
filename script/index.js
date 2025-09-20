@@ -1,15 +1,11 @@
 const courses = [
-    { name: "CSE 110", category: "cse" },
-    { name: "CSE 111", category: "cse" },
-    { name: "CSE 210", category: "cse" },
-    { name: "WDD 130", category: "wdd" },
-    { name: "WDD 231", category: "wdd" },
-    { name: "WDD 330", category: "wdd" }
+    { name: "CSE 110", category: "cse", completed: true },
+    { name: "CSE 111", category: "cse", completed: true },
+    { name: "CSE 210", category: "cse", completed: true },
+    { name: "WDD 130", category: "wdd", completed: true },
+    { name: "WDD 131", category: "wdd", completed: true },
+    { name: "WDD 231", category: "wdd", completed: false } // ← not completed
 ];
-
-const courseList = document.getElementById("course-list");
-const courseCount = document.getElementById("course-count");
-const buttons = document.querySelectorAll("nav button");
 
 function displayCourses(filter) {
     courseList.innerHTML = "";
@@ -17,6 +13,9 @@ function displayCourses(filter) {
     filtered.forEach(course => {
         const li = document.createElement("li");
         li.textContent = course.name;
+        if (course.completed) {
+            li.classList.add("completed");
+        }
         courseList.appendChild(li);
     });
     courseCount.textContent = `The total number of courses listed below is ${filtered.length}`;
