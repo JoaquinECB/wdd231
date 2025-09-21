@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-US">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Joaquín – Web & Computer Programming Certificate</title>
-    <meta name="description" content="Course homepage for Joaquín's Web & Computer Programming Certificate.">
+    <meta name="description" content="Página del curso para el Certificado de Programación Web y Computación de Joaquín Cáceres Bello.">
     <meta name="author" content="Joaquín Cáceres Bello">
     <link rel="stylesheet" href="styles/styles.css" />
     <script src="scripts/scripts.js" defer></script>
@@ -14,39 +14,52 @@
 
 <body>
     <header>
-        <img src="images/vecteezy_web-developer-letter-w-logo_21726390-1.jpg" alt="Web Programming Certificate Logo" width="80">
-        <h1>Joaquín</h1>
-
+        <img src="images/vecteezy_web-developer-letter-w-logo_21726390-1.jpg" alt="Site Logo" width="50" />
+        <span class="student-name">Joaquín Cáceres Bello</span>
+        <button class="hamburger" aria-label="Open menu">&#9776;</button>
     </header>
 
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="final/index.html">Final</a></li>
+            <li><a href="#">Contact</a></li> 
+        </ul>
+    </nav>
+
     <main>
-        <h1>Joaquín – Web & Computer Programming Certificate</h1>
+        <h1>Home</h1>
 
         <section id="intro">
-            <h2>Introduction</h2>
-            <p>Welcome to my course homepage.</p>
+            <h2>Welcome</h2>
+            <p>This is the homepage for my Web & Computer Programming Certificate.</p>
         </section>
 
-        <section id="filters">
-            <h2>Filter Courses</h2>
-            <nav>
-                <button data-filter="all">All Courses</button>
-                <button data-filter="wdd">WDD Courses</button>
-                <button data-filter="cse">CSE Courses</button>
-            </nav>
-        </section>
-
-        <section id="course-listing">
-            <h2>Course List</h2>
+        <section id="courses">
+            <h2>Courses</h2>
             <p id="course-count">The total number of courses listed below is 0</p>
             <ul id="course-list"></ul>
+        </section>
+
+        <section id="resources">
+            <h2>Resources</h2>
+            <p>Visit <a href="https://www.byui.edu" target="_blank">BYU–Idaho</a> for more information.</p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 · Joaquín · Lima, Perú</p>
-        <p>Last Modification: <span id="last-modified"></span></p>
-        <a href="https://www.byui.edu" target="_blank">Visita BYU–Idaho</a>
+        <div class="social-links">
+            <a href="https://github.com/JoaquinECB" target="_blank">
+                <img src="images/vecteezy_github-logo-git-hub-icon-on-white-background_16833872.jpg" alt="GitHub" width="24" />
+            </a>
+            <a href="https://linkedin.com/in/joaquín-cáceres-bello" target="_blank">
+                <img src="images/vecteezy_linkedin-logo-vector-linkedin-symbol-linkedin-icon-free_18910721.jpg" alt="LinkedIn" width="24" />
+            </a>
+        </div>
+
+        <p>&copy; <span id="currentyear"></span> Joaquín Cáceres Bello · Lima, Perú</p>
+        <p id="lastModified"></p>
     </footer>
 </body>
 
