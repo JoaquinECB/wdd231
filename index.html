@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web & Computer Programming Certificate</title>
+    <title>Joaquín – Web & Computer Programming Certificate</title>
     <meta name="description" content="Course homepage for Joaquín's Web & Computer Programming Certificate.">
     <meta name="author" content="Joaquín Cáceres Bello">
     <link rel="stylesheet" href="styles/styles.css" />
@@ -15,24 +15,30 @@
 
 <body>
     <header>
-        <title>Joaquín – Web & Computer Programming Certificate</title>
+        <h1>Web & Computer Programming Certificate</h1>
     </header>
 
     <main>
         <h1>Joaquín – Web & Computer Programming Certificate</h1>
-        <section>
+
+        <section id="intro">
+            <h2>Introduction</h2>
             <p>Welcome to my course homepage.</p>
         </section>
-        <section>
-        <nav>
-            <button data-filter="all">All Courses</button>
-            <button data-filter="wdd">WDD Courses</button>
-            <button data-filter="cse">CSE Courses</button>
-        </nav>
+
+        <section id="filters">
+            <h2>Filter Courses</h2>
+            <nav>
+                <button data-filter="all">All Courses</button>
+                <button data-filter="wdd">WDD Courses</button>
+                <button data-filter="cse">CSE Courses</button>
+            </nav>
         </section>
-        <section>
-        <p id="course-count">The total number of courses listed below is 0</p>
-        <ul id="course-list"></ul>
+
+        <section id="course-listing">
+            <h2>Course List</h2>
+            <p id="course-count">The total number of courses listed below is 0</p>
+            <ul id="course-list"></ul>
         </section>
     </main>
 

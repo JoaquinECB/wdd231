@@ -10,11 +10,16 @@ const courses = [
 const courseList = document.getElementById("course-list");
 const courseCount = document.getElementById("course-count");
 const buttons = document.querySelectorAll("nav button");
+const lastModified = document.getElementById("last-modified");
 
 function displayCourses(filter) {
     courseList.innerHTML = "";
-    const filtered = filter === "all" ? courses : courses.filter(c => c.category === filter);
-    filtered.forEach(course => {
+
+    const filteredCourses = filter === "all"
+        ? courses
+        : courses.filter(course => course.category === filter);
+
+    filteredCourses.forEach(course => {
         const li = document.createElement("li");
         li.textContent = course.name;
         if (course.completed) {
@@ -22,17 +27,19 @@ function displayCourses(filter) {
         }
         courseList.appendChild(li);
     });
-    courseCount.textContent = `The total number of courses listed below is ${filtered.length}`;
+
+    courseCount.textContent = `The total number of courses listed below is ${filteredCourses.length}`;
 }
 
 buttons.forEach(button => {
     button.addEventListener("click", () => {
-        displayCourses(button.dataset.filter);
+        const filter = button.dataset.filter;
+        displayCourses(filter);
     });
 });
 
-// Initial load
 displayCourses("all");
 
-// Last modified date
-document.getElementById("last-modified").textContent = document.lastModified;
+if (lastModified) {
+    lastModified.textContent = document.lastModified;
+}
