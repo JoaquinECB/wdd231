@@ -39,6 +39,10 @@ main {
     padding: 1rem;
 }
 
+h1 {
+    text-align: center;
+}
+
 .view-toggle {
     text-align: center;
     margin-bottom: 1rem;
