@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Textiles Andinos",
+        "address": "Av. Grau 123, Lima",
+        "phone": "(01) 555-1234",
+        "website": "https://textilesandinos.pe",
+        "image": "textiles.png",
+        "membership": 3,
+        "description": "Moda peruana con identidad."
+    },
+    {
+        "name": "Soluciones Digitales",
+        "address": "Calle Los Olivos 456, Lima",
+        "phone": "(01) 555-5678",
+        "website": "https://soluciones.pe",
+        "image": "soluciones.png",
+        "membership": 2,
+        "description": "Servicios de TI y desarrollo web."
+    },
+    {
+        "name": "Café Lima",
+        "address": "Jr. Amazonas 789, Lima",
+        "phone": "(01) 555-9012",
+        "website": "https://cafelima.pe",
+        "image": "cafe.png",
+        "membership": 1,
+        "description": "Cafetería artesanal con productos locales."
+    },
+    {
+        "name": "EcoTurismo Perú",
+        "address": "Av. Arequipa 321, Lima",
+        "phone": "(01) 555-3456",
+        "website": "https://ecoturismo.pe",
+        "image": "ecoturismo.png",
+        "membership": 2,
+        "description": "Agencia de turismo sostenible."
+    },
+    {
+        "name": "LimaTech",
+        "address": "Calle San Martín 654, Lima",
+        "phone": "(01) 555-7890",
+        "website": "https://limatech.pe",
+        "image": "limatech.png",
+        "membership": 3,
+        "description": "Innovación y tecnología para empresas."
+    },
+    {
+        "name": "Panadería El Sol",
+        "address": "Jr. Libertad 987, Lima",
+        "phone": "(01) 555-4321",
+        "website": "https://panaderiaelsol.pe",
+        "image": "panaderia.png",
+        "membership": 1,
+        "description": "Panadería tradicional con productos frescos."
+    },
+    {
+        "name": "Consultora Lima",
+        "address": "Av. Javier Prado 1111, Lima",
+        "phone": "(01) 555-8765",
+        "website": "https://consultoralima.pe",
+        "image": "consultora.png",
+        "membership": 2,
+        "description": "Asesoría legal y financiera."
+    }
+]
