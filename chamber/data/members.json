@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Andean Textiles",
+        "address": "123 Grau Avenue, Lima",
+        "phone": "(01) 555-1234",
+        "website": "https://andeantextiles.com",
+        "image": "andeantextiles.png",
+        "membership": 3,
+        "description": "Peruvian fashion with cultural identity."
+    },
+    {
+        "name": "Digital Solutions",
+        "address": "456 Los Olivos Street, Lima",
+        "phone": "(01) 555-5678",
+        "website": "https://digitalsolutions.com",
+        "image": "digitalsolutions.png",
+        "membership": 2,
+        "description": "IT services and web development for businesses."
+    },
+    {
+        "name": "Lima Coffee",
+        "address": "789 Amazonas Street, Lima",
+        "phone": "(01) 555-9012",
+        "website": "https://limacoffee.com",
+        "image": "limacoffee.png",
+        "membership": 1,
+        "description": "Artisan coffee shop with local products."
+    },
+    {
+        "name": "EcoTour Peru",
+        "address": "321 Arequipa Avenue, Lima",
+        "phone": "(01) 555-3456",
+        "website": "https://ecotourperu.com",
+        "image": "ecotourperu.png",
+        "membership": 2,
+        "description": "Sustainable tourism agency offering eco-friendly experiences."
+    },
+    {
+        "name": "LimaTech",
+        "address": "654 San Martín Street, Lima",
+        "phone": "(01) 555-7890",
+        "website": "https://limatech.com",
+        "image": "limatech.png",
+        "membership": 3,
+        "description": "Innovation and technology solutions for companies."
+    },
+    {
+        "name": "Sunrise Bakery",
+        "address": "987 Libertad Street, Lima",
+        "phone": "(01) 555-4321",
+        "website": "https://sunrisebakery.com",
+        "image": "sunrisebakery.png",
+        "membership": 1,
+        "description": "Traditional bakery offering fresh daily goods."
+    },
+    {
+        "name": "Lima Consulting Group",
+        "address": "1111 Javier Prado Avenue, Lima",
+        "phone": "(01) 555-8765",
+        "website": "https://limaconsulting.com",
+        "image": "limaconsulting.png",
+        "membership": 2,
+        "description": "Legal and financial advisory for entrepreneurs."
+    }
+]
