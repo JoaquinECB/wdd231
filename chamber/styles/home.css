@@ -1,0 +1,347 @@
+/* Variables */
+:root {
+    --primary-color: #005f73;
+    --secondary-color: #94d2bd;
+    --background-color: #fdfcdc;
+    --text-color: #001219;
+    --font-family: 'Segoe UI', sans-serif;
+}
+
+/* Base Styles */
+body {
+    margin: 0;
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0.5rem;
+}
+
+nav a.active {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Main Content */
+main {
+    padding: 1rem;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 95, 115, 0.85), rgba(0, 95, 115, 0.85)),
+        url('https://images.unsplash.com/photo-1531968455001-5c5272a41129?w=1200&h=400&fit=crop');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 4rem 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+}
+
+.hero-content h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #7bc4af;
+    transform: translateY(-2px);
+}
+
+/* Home Grid Layout */
+.home-grid {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* Section Styles */
+section {
+    background-color: white;
+    padding: 1.5rem;
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Events Section */
+.event-card {
+    background-color: var(--background-color);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid var(--secondary-color);
+}
+
+.event-card:last-child {
+    margin-bottom: 0;
+}
+
+.event-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.event-date {
+    color: #ca6702;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.event-card p:last-child {
+    margin: 0;
+}
+
+/* Weather Section */
+.current-weather {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #0a9396 100%);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.temperature {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.weather-desc {
+    font-size: 1.1rem;
+    text-transform: capitalize;
+}
+
+.forecast {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.forecast-day {
+    background-color: var(--background-color);
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid var(--secondary-color);
+}
+
+.forecast-day h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.forecast-temp {
+    font-size: 1.3rem;
+    color: #ca6702;
+    font-weight: bold;
+}
+
+.forecast-day p {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+}
+
+/* Spotlights Section */
+.spotlights-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.spotlight-card {
+    background-color: white;
+    border: 2px solid var(--secondary-color);
+    padding: 1.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 5px;
+}
+
+.spotlight-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.spotlight-card.gold {
+    border-color: #ffd700;
+    background: linear-gradient(to bottom, #fffef0 0%, #ffffff 100%);
+}
+
+.spotlight-card.silver {
+    border-color: #c0c0c0;
+    background: linear-gradient(to bottom, #f8f8f8 0%, #ffffff 100%);
+}
+
+.spotlight-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.spotlight-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.spotlight-title h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.25rem;
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+.membership-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.membership-badge.gold {
+    background-color: #ffd700;
+    color: #333;
+}
+
+.membership-badge.silver {
+    background-color: #c0c0c0;
+    color: #333;
+}
+
+.spotlight-info p {
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+}
+
+.spotlight-website {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.spotlight-website:hover {
+    text-decoration: underline;
+}
+
+/* Loading and Error States */
+.loading {
+    text-align: center;
+    padding: 2rem;
+    color: #666;
+}
+
+.error {
+    text-align: center;
+    color: #d62828;
+    padding: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0.25rem 0;
+}
+
+/* Tablet and larger screens */
+@media (min-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .home-grid {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .events-section {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .weather-section {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .spotlights-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .forecast {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Desktop screens */
+@media (min-width: 1024px) {
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .spotlights-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Mobile very small screens */
+@media (max-width: 320px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
