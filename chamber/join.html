@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join - Lima Chamber of Commerce</title>
+    <meta name="description" content="Join the Lima Chamber of Commerce and grow your business network.">
+    <meta name="author" content="Joaquín Cáceres Bello">
+    <link rel="icon" href="images/favicon(1).ico">
+
+    <!-- Facebook Open Graph -->
+    <meta property="og:title" content="Join - Lima Chamber of Commerce">
+    <meta property="og:description" content="Become a member and access exclusive business opportunities.">
+    <meta property="og:image"
+        content="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/331659525/original/3027cadbae7059901c26e7e6c12491b865b21a2e/create-a-python-program-or-python-script.jpg">
+    <meta property="og:url" content="https://joaquinecb.github.io/wdd231/chamber/join.html">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/join.css">
+
+    <!-- JS -->
+    <script defer src="scripts/join.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Join Lima Chamber of Commerce</h1>
+
+        <div class="join-container">
+            <!-- Membership Application Form -->
+            <section class="form-section">
+                <h2>Membership Application</h2>
+                <form method="get" action="thankyou.html">
+
+                    <label for="firstName">
+                        <span>First Name *</span>
+                        <input type="text" id="firstName" name="firstName" title="Please enter your first name"
+                            autocomplete="given-name" required>
+                    </label>
+
+                    <label for="lastName">
+                        <span>Last Name *</span>
+                        <input type="text" id="lastName" name="lastName" title="Please enter your last name"
+                            autocomplete="family-name" required>
+                    </label>
+
+                    <label for="orgTitle">
+                        <span>Organizational Title</span>
+                        <input type="text" id="orgTitle" name="orgTitle"
+                            title="Enter your title (minimum 7 characters, letters, hyphens, and spaces only)"
+                            autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
+                    </label>
+
+                    <label for="email">
+                        <span>Email Address *</span>
+                        <input type="email" id="email" name="email" title="Please enter a valid email address"
+                            autocomplete="email" placeholder="example@email.com" required>
+                    </label>
+
+                    <label for="mobile">
+                        <span>Mobile Phone *</span>
+                        <input type="tel" id="mobile" name="mobile" title="Please enter your mobile phone number"
+                            autocomplete="tel" required>
+                    </label>
+
+                    <label for="organization">
+                        <span>Business/Organization Name *</span>
+                        <input type="text" id="organization" name="organization"
+                            title="Please enter your business or organization name" autocomplete="organization"
+                            required>
+                    </label>
+
+                    <label for="membership">
+                        <span>Membership Level</span>
+                        <select id="membership" name="membership" title="Select your membership level">
+                            <option value="">Select Membership Level</option>
+                            <option value="np">NP Membership (Non-Profit - No Fee)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+
+                    <label for="description">
+                        <span>Business/Organization Description</span>
+                        <textarea id="description" name="description"
+                            title="Describe your business or organization and its services"></textarea>
+                    </label>
+
+                    <input type="hidden" id="timestamp" name="timestamp">
+
+                    <input type="submit" value="Submit Application">
+                </form>
+            </section>
+
+            <!-- Membership Cards -->
+            <section class="membership-levels">
+                <h2>Membership Levels</h2>
+
+                <div class="membership-card np-card">
+                    <h3>NP Membership</h3>
+                    <p class="price">No Fee</p>
+                    <p class="description">For non-profit organizations</p>
+                    <a href="#" class="learn-more" data-modal="npModal">Learn More</a>
+                </div>
+
+                <div class="membership-card bronze-card">
+                    <h3>Bronze Membership</h3>
+                    <p class="price">$250/year</p>
+                    <p class="description">Essential benefits for growing businesses</p>
+                    <a href="#" class="learn-more" data-modal="bronzeModal">Learn More</a>
+                </div>
+
+                <div class="membership-card silver-card">
+                    <h3>Silver Membership</h3>
+                    <p class="price">$500/year</p>
+                    <p class="description">Enhanced features and visibility</p>
+                    <a href="#" class="learn-more" data-modal="silverModal">Learn More</a>
+                </div>
+
+                <div class="membership-card gold-card">
+                    <h3>Gold Membership</h3>
+                    <p class="price">$1,000/year</p>
+                    <p class="description">Premium benefits and maximum exposure</p>
+                    <a href="#" class="learn-more" data-modal="goldModal">Learn More</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Modals -->
+    <div id="npModal" class="modal">
+        <div class="modal-content">
+            <button class="close" aria-label="Close modal">&times;</button>
+            <h3>NP Membership Benefits</h3>
+            <ul>
+                <li>Free membership for verified non-profit organizations</li>
+                <li>Access to Chamber networking events</li>
+                <li>Listing in our online business directory</li>
+                <li>Monthly newsletter with business insights</li>
+                <li>Access to educational resources and workshops</li>
+                <li>Community recognition and visibility</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="bronzeModal" class="modal">
+        <div class="modal-content">
+            <button class="close" aria-label="Close modal">&times;</button>
+            <h3>Bronze Membership Benefits</h3>
+            <ul>
+                <li>All NP Membership benefits included</li>
+                <li>Priority listing in business directory</li>
+                <li>10% discount on Chamber events and workshops</li>
+                <li>Quarterly spotlight feature on website</li>
+                <li>Social media promotion (monthly)</li>
+                <li>Access to member-only networking sessions</li>
+                <li>Business referral opportunities</li>
+                <li>Certificate of membership for display</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="silverModal" class="modal">
+        <div class="modal-content">
+            <button class="close" aria-label="Close modal">&times;</button>
+            <h3>Silver Membership Benefits</h3>
+            <ul>
+                <li>All Bronze Membership benefits included</li>
+                <li>Premium placement in business directory</li>
+                <li>20% discount on all Chamber events</li>
+                <li>Monthly spotlight feature on homepage</li>
+                <li>Social media promotion (bi-weekly)</li>
+                <li>Featured speaker opportunities at events</li>
+                <li>Co-branding on select marketing materials</li>
+                <li>Access to business analytics and market data</li>
+                <li>VIP seating at Chamber events</li>
+                <li>Dedicated member support line</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="goldModal" class="modal">
+        <div class="modal-content">
+            <button class="close" aria-label="Close modal">&times;</button>
+            <h3>Gold Membership Benefits</h3>
+            <ul>
+                <li>All Silver Membership benefits included</li>
+                <li>Top-tier placement in all directories</li>
+                <li>30% discount on all Chamber events and services</li>
+                <li>Weekly spotlight feature on homepage</li>
+                <li>Daily social media promotion when active</li>
+                <li>Keynote speaking opportunities</li>
+                <li>Logo placement on all Chamber materials</li>
+                <li>Exclusive executive networking events</li>
+                <li>One-on-one business consultations</li>
+                <li>Priority consideration for awards and recognition</li>
+                <li>Complimentary booth at Chamber trade shows</li>
+                <li>24/7 priority member support</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Joaquin Caceres - Lima Chamber of Commerce</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

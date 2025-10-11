@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Lima Chamber of Commerce</title>
+    <meta name="description" content="Thank you for joining the Lima Chamber of Commerce">
+    <meta name="author" content="Joaquín Cáceres Bello">
+    <link rel="icon" href="images/favicon(1).ico">
+
+    <!-- Facebook Open Graph -->
+    <meta property="og:title" content="Thank You - Lima Chamber of Commerce">
+    <meta property="og:description" content="Your membership application has been received">
+    <meta property="og:image"
+        content="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/331659525/original/3027cadbae7059901c26e7e6c12491b865b21a2e/create-a-python-program-or-python-script.jpg">
+    <meta property="og:url" content="https://joaquinecb.github.io/wdd231/chamber/thankyou.html">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/thankyou.css">
+
+    <!-- JS -->
+    <script defer src="scripts/thankyou.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="thank-you-container">
+            <div class="checkmark">
+                <span class="checkmark-icon">✓</span>
+            </div>
+
+            <h1>Thank You!</h1>
+            <p class="subtitle">Your membership application has been successfully submitted.</p>
+
+            <div class="info-section">
+                <h2>Application Summary</h2>
+                <div class="info-grid" id="applicationData">
+                    <!-- Data will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <div class="next-steps">
+                <h3>What Happens Next?</h3>
+                <ul>
+                    <li>Our team will review your application within 2-3 business days</li>
+                    <li>You will receive a confirmation email at the address you provided</li>
+                    <li>Once approved, you'll get access to all membership benefits</li>
+                    <li>We'll send you information about upcoming networking events</li>
+                    <li>A member of our team may contact you to welcome you personally</li>
+                </ul>
+            </div>
+
+            <div class="actions">
+                <a href="index.html" class="btn btn-primary">Return to Home</a>
+                <a href="directory.html" class="btn btn-secondary">View Directory</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Joaquin Caceres - Lima Chamber of Commerce</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
