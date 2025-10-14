@@ -1,0 +1,177 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #fff;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Headings */
+h1 {
+    color: #03045E;
+    border-bottom: 3px solid #0077B6;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+h2 {
+    color: #0077B6;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+h3 {
+    color: #03045E;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+h4 {
+    color: #0077B6;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+/* Paragraphs and Lists */
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+ul,
+ol {
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+strong {
+    color: #03045E;
+}
+
+/* Header */
+header {
+    margin-bottom: 40px;
+}
+
+header p {
+    margin: 5px 0;
+    text-align: left;
+}
+
+/* Sections */
+.section {
+    margin-bottom: 40px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #0077B6;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Color Box */
+.color-box {
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    border: 1px solid #333;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* Font Examples */
+.font-example {
+    padding: 10px;
+    background: #f5f5f5;
+    border-left: 4px solid #0077B6;
+    margin: 10px 0;
+}
+
+/* Wireframe Sections */
+.wireframe-section {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 2px solid #0077B6;
+    text-align: center;
+    color: #666;
+}
+
+footer p {
+    margin: 5px 0;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    body {
+        padding: 20px 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+
+    .color-box {
+        width: 40px;
+        height: 25px;
+    }
+}
