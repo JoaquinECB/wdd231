@@ -1,0 +1,154 @@
+{
+    "stories": [
+        {
+            "id": 1,
+            "title": "Limahuaca Water System Initiative",
+            "region": "Ayacucho",
+            "description": "A grassroots initiative that brought clean water to a remote mountain village through a community-managed system.",
+            "peopleHelped": 2500,
+            "year": 2022,
+            "featured": true,
+            "impact": "Reduced waterborne diseases by 80% and improved school attendance rates significantly."
+        },
+        {
+            "id": 2,
+            "title": "Puno Lake Conservation Project",
+            "region": "Puno",
+            "description": "Efforts to protect and clean Lake Titicaca while building infrastructure to distribute safe water to communities.",
+            "peopleHelped": 5000,
+            "year": 2023,
+            "featured": true,
+            "impact": "Established 15 new water distribution points and improved water quality testing."
+        },
+        {
+            "id": 3,
+            "title": "Cusco Rural Water Network",
+            "region": "Cusco",
+            "description": "Expanding water infrastructure to connect 45 remote communities through sustainable pipeline systems.",
+            "peopleHelped": 8000,
+            "year": 2023,
+            "featured": true,
+            "impact": "Women now spend 3 fewer hours per day collecting water, allowing more time for education."
+        },
+        {
+            "id": 4,
+            "title": "Junín Mining Water Recovery",
+            "region": "Junín",
+            "description": "Project addressing water contamination from mining activities and restoring access to clean water.",
+            "peopleHelped": 3200,
+            "year": 2022,
+            "featured": true,
+            "impact": "Implemented water treatment systems serving 6 communities with monitored water quality."
+        },
+        {
+            "id": 5,
+            "title": "Apurímac Rainwater Harvesting",
+            "region": "Apurímac",
+            "description": "Installing rainwater collection systems in households during dry season to ensure year-round water availability.",
+            "peopleHelped": 1800,
+            "year": 2023,
+            "featured": true,
+            "impact": "Created water independence for families and reduced climate vulnerability."
+        },
+        {
+            "id": 6,
+            "title": "Huancavelica Groundwater Access",
+            "region": "Huancavelica",
+            "description": "Drilling and testing new boreholes to access reliable groundwater sources for isolated communities.",
+            "peopleHelped": 1500,
+            "year": 2021,
+            "featured": true,
+            "impact": "Reduced intestinal infections in children by 65% in the first year."
+        },
+        {
+            "id": 7,
+            "title": "Loreto River Communities Water Safety",
+            "region": "Loreto",
+            "description": "Building water treatment facilities for riverine communities to ensure microbial safety of drinking water.",
+            "peopleHelped": 4000,
+            "year": 2023,
+            "featured": true,
+            "impact": "Equipped 8 communities with solar-powered water treatment systems."
+        },
+        {
+            "id": 8,
+            "title": "Arequipa Urban Slum Water Program",
+            "region": "Arequipa",
+            "description": "Extending water infrastructure to growing urban settlements on the outskirts of Arequipa city.",
+            "peopleHelped": 12000,
+            "year": 2022,
+            "featured": true,
+            "impact": "Provided formal water connections to 3,000 households previously without service."
+        },
+        {
+            "id": 9,
+            "title": "Amazonas Indigenous Water Rights",
+            "region": "Amazonas",
+            "description": "Supporting indigenous communities in establishing protected water sources and sustainable management practices.",
+            "peopleHelped": 2000,
+            "year": 2023,
+            "featured": true,
+            "impact": "Recognized water rights for 12 indigenous communities and created sustainable management plans."
+        },
+        {
+            "id": 10,
+            "title": "Ica Aquifer Restoration Initiative",
+            "region": "Ica",
+            "description": "Implementing sustainable agriculture practices and aquifer recharge projects to combat over-extraction.",
+            "peopleHelped": 6500,
+            "year": 2022,
+            "featured": true,
+            "impact": "Stabilized aquifer levels and provided alternative water sources for 45 farms."
+        },
+        {
+            "id": 11,
+            "title": "Tacna Desert Water Efficiency",
+            "region": "Tacna",
+            "description": "Installing drip irrigation and water-saving technologies in arid regions to maximize water use efficiency.",
+            "peopleHelped": 3000,
+            "year": 2023,
+            "featured": true,
+            "impact": "Reduced agricultural water consumption by 40% while maintaining crop yields."
+        },
+        {
+            "id": 12,
+            "title": "Ucayali Water Quality Monitoring",
+            "region": "Ucayali",
+            "description": "Establishing community-based water quality monitoring systems in Amazon communities.",
+            "peopleHelped": 2800,
+            "year": 2023,
+            "featured": true,
+            "impact": "Early detection of water contamination events prevented potential health crises."
+        },
+        {
+            "id": 13,
+            "title": "Lima Periurban Water Expansion",
+            "region": "Lima",
+            "description": "Extending water networks to growing populations in rural areas surrounding Lima metropolitan area.",
+            "peopleHelped": 15000,
+            "year": 2022,
+            "featured": true,
+            "impact": "Connected 5,000 families to safe water supply systems."
+        },
+        {
+            "id": 14,
+            "title": "Ancash Glacier Water Conservation",
+            "region": "Ancash",
+            "description": "Protecting glacier water sources and improving distribution infrastructure in response to climate change.",
+            "peopleHelped": 4200,
+            "year": 2023,
+            "featured": true,
+            "impact": "Secured water supply for communities facing glacial melt impacts."
+        },
+        {
+            "id": 15,
+            "title": "Moquegua Community Wells Project",
+            "region": "Moquegua",
+            "description": "Coordinating community-managed deep wells and water distribution networks in desert communities.",
+            "peopleHelped": 1200,
+            "year": 2021,
+            "featured": true,
+            "impact": "Provided sustainable water access and generated income through water management employment."
+        }
+    ]
+}

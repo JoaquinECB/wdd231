@@ -1,0 +1,124 @@
+{
+    "regions": [
+        {
+            "id": 1,
+            "name": "Lima",
+            "population": "9,500,000",
+            "accessLevel": 85,
+            "description": "Peru's capital with significant urban water infrastructure, though rural areas surrounding Lima face challenges.",
+            "challenges": "Urban sprawl, aging infrastructure, seasonal water shortages"
+        },
+        {
+            "id": 2,
+            "name": "Cusco",
+            "population": "1,300,000",
+            "accessLevel": 65,
+            "description": "Mountain region with historical significance. Water access varies greatly between urban centers and remote communities.",
+            "challenges": "High altitude, limited infrastructure, indigenous communities underserved"
+        },
+        {
+            "id": 3,
+            "name": "Ayacucho",
+            "population": "612,000",
+            "accessLevel": 42,
+            "description": "Rural region with significant water scarcity. Many communities rely on seasonal rainfall and groundwater.",
+            "challenges": "Extreme water scarcity, poverty, limited government resources"
+        },
+        {
+            "id": 4,
+            "name": "Puno",
+            "population": "1,400,000",
+            "accessLevel": 58,
+            "description": "High-altitude region near Lake Titicaca. Despite proximity to water, distribution infrastructure is inadequate.",
+            "challenges": "Altitude, cold climate, infrastructure maintenance in harsh conditions"
+        },
+        {
+            "id": 5,
+            "name": "Junín",
+            "population": "1,260,000",
+            "accessLevel": 52,
+            "description": "Central highlands region with significant indigenous population. Water quality and access remain major concerns.",
+            "challenges": "Mining activities, water contamination, rural isolation"
+        },
+        {
+            "id": 6,
+            "name": "Apurímac",
+            "population": "430,000",
+            "accessLevel": 38,
+            "description": "One of Peru's poorest regions with critical water shortage issues affecting subsistence farming communities.",
+            "challenges": "Extreme poverty, drought, lack of infrastructure"
+        },
+        {
+            "id": 7,
+            "name": "Huancavelica",
+            "population": "450,000",
+            "accessLevel": 45,
+            "description": "Remote mountain region where many villages have no access to piped water systems.",
+            "challenges": "Geographic isolation, high poverty, limited road access"
+        },
+        {
+            "id": 8,
+            "name": "Ucayali",
+            "population": "480,000",
+            "accessLevel": 55,
+            "description": "Amazon region with paradoxical situation of abundant water but poor quality and contamination issues.",
+            "challenges": "Water contamination, limited treatment facilities, riverine communities"
+        },
+        {
+            "id": 9,
+            "name": "Loreto",
+            "population": "890,000",
+            "accessLevel": 50,
+            "description": "Peru's largest region by area in the Amazon. Indigenous communities face water quality challenges.",
+            "challenges": "Remote locations, limited infrastructure, rainforest environment"
+        },
+        {
+            "id": 10,
+            "name": "Amazonas",
+            "population": "400,000",
+            "accessLevel": 40,
+            "description": "Northern Amazon region where water scarcity paradoxically affects highland and valley communities.",
+            "challenges": "Geographic isolation, limited government reach, indigenous rights"
+        },
+        {
+            "id": 11,
+            "name": "Arequipa",
+            "population": "1,300,000",
+            "accessLevel": 72,
+            "description": "Southern coastal and highland region with better urban infrastructure but rural challenges persist.",
+            "challenges": "Coastal desert, mining competition for water, rural-urban divide"
+        },
+        {
+            "id": 12,
+            "name": "Tacna",
+            "population": "330,000",
+            "accessLevel": 68,
+            "description": "Southernmost region with desert climate. Urban centers have adequate water but rural areas suffer severe scarcity.",
+            "challenges": "Desert climate, agricultural water demands, border region issues"
+        },
+        {
+            "id": 13,
+            "name": "Moquegua",
+            "population": "160,000",
+            "accessLevel": 62,
+            "description": "Small southern region between Arequipa and Tacna. Water is critically limited due to desert environment.",
+            "challenges": "Desert conditions, small tax base, agricultural needs"
+        },
+        {
+            "id": 14,
+            "name": "Ica",
+            "population": "860,000",
+            "accessLevel": 70,
+            "description": "Coastal region where agricultural demands compete with urban water needs. Aquifer depletion is a major concern.",
+            "challenges": "Over-extraction of groundwater, agricultural irrigation, aquifer depletion"
+        },
+        {
+            "id": 15,
+            "name": "Ancash",
+            "population": "1,160,000",
+            "accessLevel": 60,
+            "description": "Central coast and highlands region. Mountain communities face water scarcity while coastal areas have infrastructure issues.",
+            "challenges": "Glacial melt impacts, aging infrastructure, industrial pollution"
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Plaza Mayor de Lima",
+        "address": "Jirón de la Unión, Lima 15001",
+        "description": "The historic heart of Lima, featuring stunning colonial architecture and the Government Palace. A UNESCO World Heritage site that showcases Lima's rich history.",
+        "image": "PlazaMayordeLima.webp"
+    },
+    {
+        "name": "Miraflores Boardwalk",
+        "address": "Malecón de la Reserva, Miraflores",
+        "description": "A scenic clifftop promenade offering breathtaking Pacific Ocean views, perfect for evening walks and paragliding adventures.",
+        "image": "MalecondeMiraflores.webp"
+    },
+    {
+        "name": "Larco Museum",
+        "address": "Av. Simón Bolívar 1515, Pueblo Libre",
+        "description": "Home to an impressive collection of pre-Columbian art, showcasing over 5,000 years of Peruvian history in a beautiful 18th-century mansion.",
+        "image": "MuseoLarco.webp"
+    },
+    {
+        "name": "Barranco District",
+        "address": "Barranco, Lima",
+        "description": "Lima's bohemian quarter filled with colorful colonial architecture, art galleries, and vibrant nightlife along charming cobblestone streets.",
+        "image": "distritodeBarranco.webp"
+    },
+    {
+        "name": "Huaca Pucllana",
+        "address": "Calle General Borgoño, Miraflores",
+        "description": "An ancient adobe pyramid built by the Lima culture around 500 AD, now a fascinating archaeological site with evening illumination.",
+        "image": "HuacaPucllana.webp"
+    },
+    {
+        "name": "Kennedy Park",
+        "address": "Parque Kennedy, Miraflores",
+        "description": "A lively central park in Miraflores, famous for its resident cat population and surrounded by cafes, restaurants, and street performers.",
+        "image": "parque-kennedy.webp"
+    },
+    {
+        "name": "Magic Water Circuit",
+        "address": "Parque de la Reserva, Lima",
+        "description": "The world's largest fountain complex with 13 interactive fountains featuring spectacular light and music shows every evening.",
+        "image": "CircuitoMagicodeAgua.webp"
+    },
+    {
+        "name": "San Francisco Monastery",
+        "address": "Jirón Lampa, Lima Historic Center",
+        "description": "A baroque masterpiece featuring intricate tile work, colonial religious art, and mysterious underground catacombs housing thousands of remains.",
+        "image": "MonasteriodeSanFrancisco.webp"
+    }
+]

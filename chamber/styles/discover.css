@@ -1,0 +1,300 @@
+/* discover.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #0A5F6F;
+    --secondary-color: #2E8B9E;
+    --accent-color: #7FB3BF;
+    --light-bg: #F0F8FA;
+    --text-dark: #1A3A3F;
+    --card-bg: #FFFFFF;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-dark);
+    line-height: 1.6;
+    background-color: var(--light-bg);
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+    padding: 1rem 0;
+    box-shadow: var(--shadow);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Main */
+main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/* Visit Message */
+#visit-message {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 1.1rem;
+    box-shadow: var(--shadow);
+    animation: slideDown 0.5s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+/* Gallery Grid */
+.gallery {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+}
+
+/* Card Styling */
+.card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+    background: var(--secondary-color);
+    color: white;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.card figure {
+    margin: 0;
+    overflow: hidden;
+    height: 250px;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease, filter 0.3s ease;
+}
+
+.card address {
+    padding: 1rem;
+    font-style: normal;
+    color: var(--secondary-color);
+    font-weight: 500;
+    border-bottom: 2px solid var(--light-bg);
+}
+
+.card p {
+    padding: 1rem;
+    color: var(--text-dark);
+}
+
+.card button {
+    margin: 0 1rem 1.5rem;
+    padding: 0.75rem 2rem;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.card button:hover {
+    background: var(--secondary-color);
+    transform: scale(1.05);
+}
+
+/* Mobile: Single Column (320px - 640px) */
+@media (min-width: 320px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    /* NO hover effects on mobile */
+    .card img:hover {
+        transform: none;
+        filter: none;
+    }
+}
+
+/* Medium Screens: 2 Columns with Grid Areas (641px - 1024px) */
+@media (min-width: 641px) and (max-width: 1024px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+    }
+
+    .card:nth-child(1) {
+        grid-area: card1;
+    }
+
+    .card:nth-child(2) {
+        grid-area: card2;
+    }
+
+    .card:nth-child(3) {
+        grid-area: card3;
+    }
+
+    .card:nth-child(4) {
+        grid-area: card4;
+    }
+
+    .card:nth-child(5) {
+        grid-area: card5;
+    }
+
+    .card:nth-child(6) {
+        grid-area: card6;
+    }
+
+    .card:nth-child(7) {
+        grid-area: card7;
+    }
+
+    .card:nth-child(8) {
+        grid-area: card8;
+    }
+
+    /* Hover effect for medium screens */
+    .card img:hover {
+        transform: scale(1.1);
+        filter: brightness(1.1);
+    }
+}
+
+/* Large Screens: 3 Columns with Grid Areas (1025px+) */
+@media (min-width: 1025px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "card1 card2 card3"
+            "card4 card5 card6"
+            "card7 card8 card8";
+    }
+
+    .card:nth-child(1) {
+        grid-area: card1;
+    }
+
+    .card:nth-child(2) {
+        grid-area: card2;
+    }
+
+    .card:nth-child(3) {
+        grid-area: card3;
+    }
+
+    .card:nth-child(4) {
+        grid-area: card4;
+    }
+
+    .card:nth-child(5) {
+        grid-area: card5;
+    }
+
+    .card:nth-child(6) {
+        grid-area: card6;
+    }
+
+    .card:nth-child(7) {
+        grid-area: card7;
+    }
+
+    .card:nth-child(8) {
+        grid-area: card8;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    /* Enhanced hover effects for desktop */
+    .card img:hover {
+        transform: scale(1.15) rotate(2deg);
+        filter: brightness(1.15) saturate(1.2);
+    }
+}
+
+/* Footer */
+footer {
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+.loading {
+    text-align: center;
+    padding: 3rem;
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+}

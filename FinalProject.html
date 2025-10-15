@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Water for All - Initiative to promote access to clean water in all communities of Peru.">
+    <meta name="author" content="Joaquin Cáceres Bello">
+    <meta property="og:title" content="Water for All - Clean Water for Everyone">
+    <meta property="og:description" content="Discover how you can help bring clean water to communities in Peru.">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="styles/final.css">
+    <script type="module" src="scripts/final.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+    
+
+    <title>Water for All - Clean Water for Everyone in Peru</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <h1>Water for All</h1>
+            </div>
+            <button class="hamburger" id="hamburger">☰</button>
+            <nav class="nav" id="nav">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="About.html" class="nav-link">About</a>
+                <a href="Projects.html" class="nav-link">Projects</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Clean Water for Everyone</h2>
+                <p>Join the movement to ensure access to clean water in all communities of Peru</p>
+                <button class="cta-button" id="ctaButton">Learn More</button>
+            </div>
+        </section>
+
+        <section class="about-problem" id="aboutProblem">
+            <div class="container">
+                <h3>The Problem</h3>
+                <p>Millions of Peruvians, especially in rural areas, lack access to clean and safe water. This situation
+                    affects the health, education, and economic development of communities.</p>
+            </div>
+        </section>
+
+        <section class="interactive-map">
+            <div class="container">
+                <h3>Interactive Map</h3>
+                <p>Explore the regions of Peru and visualize which have the greatest limitation of access to clean
+                    water:</p>
+                <div id="mapContainer" class="map-container">
+                    <!-- The map will be loaded dynamically here -->
+                </div>
+            </div>
+        </section>
+
+        <section class="community-stories">
+            <div class="container">
+                <h3>Community Stories</h3>
+                <div id="storiesContainer" class="stories-grid">
+                    <!-- Stories will be loaded dynamically here -->
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <h3>Share Your Initiative</h3>
+                <form id="contactForm" class="contact-form" action="form-response.html" method="POST">
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="region">Region:</label>
+                        <select id="region" name="region" required>
+                            <option value="">Select a region</option>
+                            <option value="Lima">Lima</option>
+                            <option value="Cusco">Cusco</option>
+                            <option value="Ayacucho">Ayacucho</option>
+                            <option value="Puno">Puno</option>
+                            <option value="Junín">Junín</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Initiative Description:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Submit Initiative</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h4 id="modalTitle"></h4>
+            <p id="modalBody"></p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Water for All. All rights reserved.</p>
+            <a href="attributions.html">Attributions</a>
+            <p><a href="https://youtube.com" target="_blank">View Project Demonstration</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
