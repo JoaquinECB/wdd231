@@ -1,5 +1,5 @@
 import { setupNavigation } from './navigation.js';
-import { setupModal } from './ui-components.js';
+import { setupModal } from '../../scripts/ui-components.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     setupNavigation();

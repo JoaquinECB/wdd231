@@ -1,6 +1,6 @@
 import { setupNavigation } from './navigation.js';
 import { loadRegions, loadStories } from './data-handler.js';
-import { setupModal, setupForm } from './ui-components.js';
+import { setupModal, setupForm } from '../../scripts/ui-components.js';
 
 // Initialize the application
 document.addEventListener('DOMContentLoaded', () => {
