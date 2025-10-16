@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Join Water for All and become part of the movement to bring clean water to Peru's communities.">
+    <meta name="author" content="Joaquin Cáceres Bello">
+    <meta property="og:title" content="Join Our Movement - Water for All">
+    <meta property="og:description"
+        content="Become a member and help us transform communities through clean water access.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://joaquinecb.github.io/wdd231/join.html">
+    <meta property="og:image" content="images/WaterforAll.ico">
+    <link rel="icon" type="image/png" href="images/WaterforAll.ico">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Open+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/final.css">
+    <script type="module" src="scripts/join.js"></script>
+    <title>Join Our Movement - Water for All</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <h1>Water for All</h1>
+            </div>
+            <button class="hamburger" id="hamburger">☰</button>
+            <nav class="nav" id="nav">
+                <a href="final-project.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="join.html" class="nav-link active">Join</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-secondary">
+            <div class="hero-content">
+                <h2>Join Our Movement</h2>
+                <p>Become part of the solution - Together we can bring clean water to every community</p>
+            </div>
+        </section>
+
+        <section class="bg-white">
+            <div class="container">
+                <h3>Membership Benefits</h3>
+                <div class="grid">
+                    <div class="card">
+                        <h4>🌍 Global Impact</h4>
+                        <p>Join thousands of members worldwide working to bring clean water to underserved communities
+                            across Peru and beyond.</p>
+                    </div>
+                    <div class="card">
+                        <h4>📊 Track Progress</h4>
+                        <p>Monitor project updates and see the direct impact of your contributions through our real-time
+                            dashboard.</p>
+                    </div>
+                    <div class="card">
+                        <h4>🤝 Community Network</h4>
+                        <p>Connect with like-minded individuals, professionals, and organizations committed to water
+                            access and sustainability.</p>
+                    </div>
+                    <div class="card">
+                        <h4>📚 Educational Resources</h4>
+                        <p>Access exclusive webinars, articles, and training materials on water conservation and
+                            sustainable development.</p>
+                    </div>
+                    <div class="card">
+                        <h4>💼 Professional Recognition</h4>
+                        <p>Receive certificates and recognition for your contributions to the movement and volunteer
+                            work.</p>
+                    </div>
+                    <div class="card">
+                        <h4>📢 Advocacy Platform</h4>
+                        <p>Amplify your voice and participate in policy discussions that shape water access initiatives.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-aqua">
+            <div class="container">
+                <h3>Membership Tiers</h3>
+                <div id="membershipContainer" class="membership-grid">
+                    <!-- Membership tiers will be loaded dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white">
+            <div class="container">
+                <h3>Become a Member</h3>
+                <form id="membershipForm" class="contact-form" action="join-response.html" method="POST">
+                    <div class="form-group">
+                        <label for="firstName">First Name:</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="country">Country:</label>
+                        <input type="text" id="country" name="country" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="membershipTier">Membership Tier:</label>
+                        <select id="membershipTier" name="membershipTier" required>
+                            <option value="">Select a tier</option>
+                            <option value="basic">Basic - Free</option>
+                            <option value="supporter">Supporter - $9.99/month</option>
+                            <option value="champion">Champion - $24.99/month</option>
+                            <option value="guardian">Guardian - $99.99/month</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="interests">Areas of Interest:</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="interests" value="fundraising"> Fundraising</label>
+                            <label><input type="checkbox" name="interests" value="education"> Education &
+                                Outreach</label>
+                            <label><input type="checkbox" name="interests" value="technical"> Technical Support</label>
+                            <label><input type="checkbox" name="interests" value="advocacy"> Advocacy</label>
+                            <label><input type="checkbox" name="interests" value="fieldwork"> Field Work</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Why Do You Want to Join?</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label><input type="checkbox" id="newsletter" name="newsletter" checked> Subscribe to our
+                            newsletter</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Join Now</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="bg-aqua">
+            <div class="container">
+                <h3>Member Testimonials</h3>
+                <div id="testimonialContainer" class="testimonials-grid">
+                    <!-- Testimonials will be loaded dynamically -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h4 id="modalTitle"></h4>
+            <p id="modalBody"></p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Water for All. All rights reserved.</p>
+            <p><a href="https://youtube.com" target="_blank">View Project Demonstration</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

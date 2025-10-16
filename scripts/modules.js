@@ -1,4 +1,6 @@
-// Navigation Module
+// ============================================
+// NAVIGATION MODULE
+// ============================================
 export function setupNavigation() {
     const hamburger = document.getElementById('hamburger');
     const nav = document.getElementById('nav');
@@ -26,7 +28,9 @@ export function setupNavigation() {
     });
 }
 
-// Modal Module
+// ============================================
+// MODAL MODULE
+// ============================================
 export function setupModal() {
     const modal = document.getElementById('modal');
     const closeBtn = document.querySelector('.close');
@@ -56,7 +60,9 @@ export function openModal(title, content) {
     modal.style.display = 'block';
 }
 
-// Data Loading Module
+// ============================================
+// DATA LOADING - REGIONS
+// ============================================
 export async function loadRegions() {
     try {
         const response = await fetch('data/regions.json');
@@ -70,23 +76,6 @@ export async function loadRegions() {
         const cached = localStorage.getItem('regionsData');
         if (cached) {
             displayRegions(JSON.parse(cached));
-        }
-    }
-}
-
-export async function loadStories() {
-    try {
-        const response = await fetch('data/stories.json');
-        if (!response.ok) throw new Error('Failed to fetch stories data');
-
-        const data = await response.json();
-        displayStories(data.stories);
-        localStorage.setItem('storiesData', JSON.stringify(data.stories));
-    } catch (error) {
-        console.error('Error loading stories:', error);
-        const cached = localStorage.getItem('storiesData');
-        if (cached) {
-            displayStories(JSON.parse(cached));
         }
     }
 }
@@ -120,6 +109,26 @@ function displayRegions(regions) {
 
         mapContainer.appendChild(regionCard);
     });
+}
+
+// ============================================
+// DATA LOADING - STORIES
+// ============================================
+export async function loadStories() {
+    try {
+        const response = await fetch('data/stories.json');
+        if (!response.ok) throw new Error('Failed to fetch stories data');
+
+        const data = await response.json();
+        displayStories(data.stories);
+        localStorage.setItem('storiesData', JSON.stringify(data.stories));
+    } catch (error) {
+        console.error('Error loading stories:', error);
+        const cached = localStorage.getItem('storiesData');
+        if (cached) {
+            displayStories(JSON.parse(cached));
+        }
+    }
 }
 
 function displayStories(stories) {
@@ -158,7 +167,9 @@ function displayStories(stories) {
         });
 }
 
-// Form Module
+// ============================================
+// FORM MODULE
+// ============================================
 export function setupForm() {
     const form = document.getElementById('contactForm');
     if (!form) return;
@@ -185,12 +196,41 @@ function handleFormSubmit(event) {
     sessionStorage.setItem('formData', JSON.stringify(data));
 
     setTimeout(() => {
-       window.location.href = 'form-response.html';
+        window.location.href = 'form-response.html';
     }, 500);
-    // ...existing
 }
 
-// Projects Module
+export function displayFormResponse() {
+    const formData = sessionStorage.getItem('formData');
+    const detailsBox = document.querySelector('.details-box');
+
+    if (formData && detailsBox) {
+        try {
+            const data = JSON.parse(formData);
+            const submissionDate = new Date(data.timestamp).toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+
+            detailsBox.innerHTML = `
+                <p><strong>Name:</strong> ${data.name}</p>
+                <p><strong>Email:</strong> ${data.email}</p>
+                <p><strong>Region:</strong> ${data.region}</p>
+                <p><strong>Initiative Description:</strong> ${data.message}</p>
+                <p><strong>Submission Date:</strong> ${submissionDate}</p>
+                <p><strong>Reference ID:</strong> WFA-${Date.now().toString().slice(-8)}</p>
+            `;
+        } catch (error) {
+            console.error('Error displaying form data:', error);
+            detailsBox.innerHTML = '<p>Unable to display submission details. Please contact support.</p>';
+        }
+    }
+}
+
+// ============================================
+// PROJECTS MODULE
+// ============================================
 export async function loadProjects() {
     try {
         const response = await fetch('data/stories.json');
@@ -231,7 +271,7 @@ function displayProjects(projects) {
                 <p><strong>Year:</strong> ${project.year}</p>
                 <p><strong>People Helped:</strong> ${project.peopleHelped.toLocaleString()}</p>
             </div>
-            <button class="btn btn-secondary" onclick="viewProjectDetails('${project.id}')">View Details</button>
+            <button class="btn btn-secondary" onclick="window.viewProjectDetails('${project.id}')">View Details</button>
         `;
 
         container.appendChild(projectCard);
@@ -307,30 +347,5 @@ export function viewProjectDetails(projectId) {
     }
 }
 
-export function displayFormResponse() {
-    const formData = sessionStorage.getItem('formData');
-    const detailsBox = document.querySelector('.details-box');
-
-    if (formData && detailsBox) {
-        try {
-            const data = JSON.parse(formData);
-            const submissionDate = new Date(data.timestamp).toLocaleDateString('en-US', {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric'
-            });
-
-            detailsBox.innerHTML = `
-                <p><strong>Name:</strong> ${data.name}</p>
-                <p><strong>Email:</strong> ${data.email}</p>
-                <p><strong>Region:</strong> ${data.region}</p>
-                <p><strong>Initiative Description:</strong> ${data.message}</p>
-                <p><strong>Submission Date:</strong> ${submissionDate}</p>
-                <p><strong>Reference ID:</strong> WFA-${Date.now().toString().slice(-8)}</p>
-            `;
-        } catch (error) {
-            console.error('Error displaying form data:', error);
-            detailsBox.innerHTML = '<p>Unable to display submission details. Please contact support.</p>';
-        }
-    }
-}
+// Make viewProjectDetails globally available
+window.viewProjectDetails = viewProjectDetails;

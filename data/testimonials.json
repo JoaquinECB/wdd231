@@ -1,0 +1,84 @@
+{
+    "testimonials": [
+        {
+            "id": 1,
+            "author": "Maria Santos",
+            "role": "Community Leader",
+            "region": "Ayacucho",
+            "rating": 5,
+            "text": "Thanks to Water for All, our village finally has access to clean water. The impact on our children's health has been remarkable."
+        },
+        {
+            "id": 2,
+            "author": "Carlos Rodriguez",
+            "role": "Project Volunteer",
+            "region": "Cusco",
+            "rating": 5,
+            "text": "Being part of this movement has given my life new purpose. Seeing communities transform is truly inspiring."
+        },
+        {
+            "id": 3,
+            "author": "Patricia Mendez",
+            "role": "Teacher",
+            "region": "Puno",
+            "rating": 5,
+            "text": "Water for All provided educational resources that help my students understand the importance of water conservation."
+        },
+        {
+            "id": 4,
+            "author": "Jorge Chavez",
+            "role": "Business Owner",
+            "region": "Lima",
+            "rating": 4,
+            "text": "I'm proud to support Water for All as a Champion member. The transparency and impact reports keep me engaged."
+        },
+        {
+            "id": 5,
+            "author": "Ana Gutierrez",
+            "role": "Environmental Activist",
+            "region": "Junín",
+            "rating": 5,
+            "text": "This organization truly understands sustainable water solutions. Their integrated approach is making real differences."
+        },
+        {
+            "id": 6,
+            "author": "Miguel Torres",
+            "role": "Guardian Member",
+            "region": "Arequipa",
+            "rating": 5,
+            "text": "As a Guardian member, I've witnessed firsthand how our collective efforts transform entire communities. Worth every penny."
+        },
+        {
+            "id": 7,
+            "author": "Rosa Flores",
+            "role": "Healthcare Worker",
+            "region": "Ucayali",
+            "rating": 5,
+            "text": "Clean water access means fewer waterborne diseases in our clinic. Water for All is saving lives."
+        },
+        {
+            "id": 8,
+            "author": "David Vargas",
+            "role": "Student Advocate",
+            "region": "Tacna",
+            "rating": 4,
+            "text": "The educational materials and webinars helped me understand global water issues. Now I advocate for change."
+        },
+        {
+            "id": 9,
+            "author": "Lucia Rojas",
+            "role": "NGO Director",
+            "region": "Amazonas",
+            "rating": 5,
+            "text": "Partnering with Water for All amplified our local efforts. Their network and resources are invaluable."
+        },
+        {
+            "id": 10,
+            "author": "Felipe Sanchez",
+            "role": "Engineer",
+            "region": "Ancash",
+            "rating": 5,
+            "text": "I contributed my technical skills to Water for All projects. It's rewarding to use expertise for social good."
+        }
+    ]
+}

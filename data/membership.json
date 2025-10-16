@@ -1,0 +1,70 @@
+{
+    "tiers": [
+        {
+            "id": 1,
+            "name": "Basic",
+            "price": "Free",
+            "duration": "Lifetime",
+            "memberCount": "2,500+",
+            "description": "Start your journey with Water for All. Access to community events, project updates, and educational resources.",
+            "features": [
+                "Access to community forum",
+                "Monthly project updates",
+                "Educational resources library",
+                "Member discounts on events",
+                "Email newsletters"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Supporter",
+            "price": "$9.99/month",
+            "duration": "Monthly",
+            "memberCount": "1,200+",
+            "description": "Make a meaningful impact. Support projects directly and receive exclusive updates and recognition.",
+            "features": [
+                "All Basic features",
+                "Monthly donation allocation",
+                "Project priority voting",
+                "Quarterly impact reports",
+                "Exclusive webinars",
+                "Supporter badge on profile"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Champion",
+            "price": "$24.99/month",
+            "duration": "Monthly",
+            "memberCount": "650+",
+            "description": "Be a champion for change. Significant project support with enhanced community leadership opportunities.",
+            "features": [
+                "All Supporter features",
+                "Quarterly donation allocation",
+                "Project advisory board access",
+                "Monthly impact webinars",
+                "Professional networking events",
+                "Recognition in annual report",
+                "Champion certificate"
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Guardian",
+            "price": "$99.99/month",
+            "duration": "Monthly",
+            "memberCount": "180+",
+            "description": "Be a guardian of hope. Maximum impact with leadership positions and exclusive partnership opportunities.",
+            "features": [
+                "All Champion features",
+                "Monthly private consultations",
+                "Exclusive leadership council",
+                "Project naming rights",
+                "VIP event invitations",
+                "Media features and publicity",
+                "Custom impact tracking",
+                "Lifetime recognition plaque"
+            ]
+        }
+    ]
+}

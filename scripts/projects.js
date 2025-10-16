@@ -2,8 +2,7 @@ import {
     setupNavigation,
     setupModal,
     loadProjects,
-    setupProjectFilters,
-    viewProjectDetails
+    setupProjectFilters
 } from './modules.js';
 
 // Initialize projects page
@@ -21,12 +20,3 @@ async function loadProjectsData() {
         console.error('Error loading projects:', error);
     }
 }
-
-// Global function for project details
-window.viewProjectDetails = viewProjectDetails;
-
-function scrollToContact() {
-    window.location.href = 'index.html#contactSection';
-}
-
-window.scrollToContact = scrollToContact;
