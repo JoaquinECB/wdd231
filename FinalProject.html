@@ -11,11 +11,10 @@
     <meta property="og:description" content="Discover how you can help bring clean water to communities in Peru.">
     <meta property="og:type" content="website">
     <link rel="icon" type="image/png" href="images/favicon.png">
-    <link rel="stylesheet" href="styles/final.css">
-    <script type="module" src="scripts/final.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
-    
-
+    <link rel="stylesheet" href="styles/styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Open+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
     <title>Water for All - Clean Water for Everyone in Peru</title>
 </head>
 
@@ -28,8 +27,8 @@
             <button class="hamburger" id="hamburger">☰</button>
             <nav class="nav" id="nav">
                 <a href="index.html" class="nav-link active">Home</a>
-                <a href="About.html" class="nav-link">About</a>
-                <a href="Projects.html" class="nav-link">Projects</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="projects.html" class="nav-link">Projects</a>
             </nav>
         </div>
     </header>
@@ -39,11 +38,11 @@
             <div class="hero-content">
                 <h2>Clean Water for Everyone</h2>
                 <p>Join the movement to ensure access to clean water in all communities of Peru</p>
-                <button class="cta-button" id="ctaButton">Learn More</button>
+                <button class="btn btn-cta" id="ctaButton">Learn More</button>
             </div>
         </section>
 
-        <section class="about-problem" id="aboutProblem">
+        <section class="bg-white">
             <div class="container">
                 <h3>The Problem</h3>
                 <p>Millions of Peruvians, especially in rural areas, lack access to clean and safe water. This situation
@@ -51,7 +50,7 @@
             </div>
         </section>
 
-        <section class="interactive-map">
+        <section class="bg-white">
             <div class="container">
                 <h3>Interactive Map</h3>
                 <p>Explore the regions of Peru and visualize which have the greatest limitation of access to clean
@@ -62,7 +61,7 @@
             </div>
         </section>
 
-        <section class="community-stories">
+        <section class="bg-aqua">
             <div class="container">
                 <h3>Community Stories</h3>
                 <div id="storiesContainer" class="stories-grid">
@@ -71,7 +70,7 @@
             </div>
         </section>
 
-        <section class="contact-section">
+        <section class="bg-white">
             <div class="container">
                 <h3>Share Your Initiative</h3>
                 <form id="contactForm" class="contact-form" action="form-response.html" method="POST">
@@ -98,7 +97,7 @@
                         <label for="message">Initiative Description:</label>
                         <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
-                    <button type="submit" class="submit-button">Submit Initiative</button>
+                    <button type="submit" class="btn btn-primary">Submit Initiative</button>
                 </form>
             </div>
         </section>
@@ -115,10 +114,11 @@
     <footer class="footer">
         <div class="footer-content">
             <p>&copy; 2025 Water for All. All rights reserved.</p>
-            <a href="attributions.html">Attributions</a>
             <p><a href="https://youtube.com" target="_blank">View Project Demonstration</a></p>
         </div>
     </footer>
+
+    <script type="module" src="scripts/main.js"></script>
 </body>
 
 </html>

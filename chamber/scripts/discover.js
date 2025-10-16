@@ -37,7 +37,7 @@ async function loadAttractions() {
             card.innerHTML = `
                 <h2>${attraction.name}</h2>
                 <figure>
-                    <img src="${attraction.image}" alt="${attraction.name}" loading="lazy">
+                    <img src="images/${attraction.image}" alt="${attraction.name}" loading="lazy">
                 </figure>
                 <address>${attraction.address}</address>
                 <p>${attraction.description}</p>
@@ -53,8 +53,10 @@ async function loadAttractions() {
 }
 
 // Footer Date Updates
-document.getElementById('year').textContent = new Date().getFullYear();
-document.getElementById('lastModified').textContent = document.lastModified;
+const yearEl = document.getElementById('year');
+const lastModEl = document.getElementById('lastModified');
+if (yearEl) yearEl.textContent = new Date().getFullYear();
+if (lastModEl) lastModEl.textContent = document.lastModified;
 
 // Initialize
 displayVisitMessage();
